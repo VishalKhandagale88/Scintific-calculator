@@ -1,0 +1,54 @@
+.maindiv{
+    width: 50%;
+    text-align: end;
+    margin-left: 20%;
+    margin-top: 5%;
+     
+}
+
+
+
+#output-container{
+    border: px solid green;
+    border-top-left-radius: 2vw;
+    border-top-right-radius: 2vw;
+    background-color: lightgray;
+    height: 20vh;
+    border: 2px solid black;
+    border-bottom: none;
+    
+}
+/* .output{
+    border:1px solid greenyellow
+}
+.opertion-Values{
+    border: 1px solid khaki;
+}
+.result{
+    border: 2px solid hotpink;
+}
+
+.input-container{
+    border: 2px solid darkorchid;
+    height: 60vh;
+}
+.inputs{
+    border: 2px solid darkred;
+} */
+#opertion_Values{
+    font-size: 5vh;
+}
+#result_value{
+    font-size: 5vh;
+}
+/* #inputContainer{
+    background-color: aliceblue;
+} */
+
+button{
+    /* Do no removw this line */
+    width: 4vw;
+    margin: 0.6vw;
+    text-align: center;
+}
+
