@@ -272,6 +272,7 @@ var outputResult = document.getElementById("result_value")
 
 createButtons();
 
+
 function createButtons() {
   scientific_buttons_div = document.getElementById("scientific");
   normal_buttons_div = document.getElementById("normal");
@@ -289,12 +290,45 @@ function createButtons() {
       scientific_buttons_div.appendChild(general_button);
     }
   });
+  
+  
+  normalCalculation();
+  
 }
+
+
+function normalCalculation(){
+  console.log("in normal calculatoin method")
+  var scientific_buttons_div = document.getElementById("scientific");
+  var selectSciCal = document.getElementById("ScientificCalc")
+  console.log(selectSciCal);
+  scientific_buttons_div.style.display="block";
+  selectSciCal.onclick=showSciCalc;
+  
+function showSciCalc(){
+  console.log("ShowSciCalc is called")
+  scientific_buttons_div.style.display="none";
+}
+ 
+  if(scientific_buttons_div.style.display=="none"){
+    alert("In if");
+    var mainDivOfCal = document.getElementById("maindiv");
+    mainDivOfCal.style.width="25%";
+  }else{
+    
+  }
+}
+
+
+
+
+
 
 
   var input_element = document.getElementById("inputContainer");
 
   input_element.addEventListener("click", (event) => {
+    console.log("in event listner of buttons")
     const target_button = event.target;
 
     calculator_buttons.forEach((buttons) => {
@@ -307,7 +341,7 @@ function createButtons() {
 
 
 function calculateOperation(button){
-    
+    console.log("in calculate operations ")
     if(button.type == "operator"){
         
         data.operations.push(button.SymbolOfButton);   
