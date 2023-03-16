@@ -292,36 +292,31 @@ function createButtons() {
   });
   
   
-  normalCalculation();
+  
   
 }
+var scientific_buttons_div = document.getElementById("scientific");
+var displayProperty = scientific_buttons_div.style.display="none";
+var mainDivOfCal = document.getElementById("maindiv");
+mainDivOfCal.style.width="25%";
 
-
-function normalCalculation(){
-  console.log("in normal calculatoin method")
-  var scientific_buttons_div = document.getElementById("scientific");
-  var selectSciCal = document.getElementById("ScientificCalc")
-  console.log(selectSciCal);
+function showFullCalc() {
+  alert("in full width scientific calculator");
   scientific_buttons_div.style.display="block";
-  selectSciCal.onclick=showSciCalc;
+  mainDivOfCal.style.width="50%";  
   
-function showSciCalc(){
-  console.log("ShowSciCalc is called")
+}
+
+function disaplayOneNormalCalc() {
+  alert("In normal calculator");
   scientific_buttons_div.style.display="none";
-}
- 
-  if(scientific_buttons_div.style.display=="none"){
-    alert("In if");
-    var mainDivOfCal = document.getElementById("maindiv");
-    mainDivOfCal.style.width="25%";
-  }else{
-    
-  }
+  mainDivOfCal.style.width="25%";
 }
 
 
-
-
+// function showSciCalc(){
+//   console.log("Hello i am working show sci cal")
+// }
 
 
 
