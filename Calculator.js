@@ -301,14 +301,14 @@ var mainDivOfCal = document.getElementById("maindiv");
 mainDivOfCal.style.width="25%";
 
 function showFullCalc() {
-  alert("in full width scientific calculator");
+  
   scientific_buttons_div.style.display="block";
   mainDivOfCal.style.width="50%";  
   
 }
 
 function disaplayOneNormalCalc() {
-  alert("In normal calculator");
+  
   scientific_buttons_div.style.display="none";
   mainDivOfCal.style.width="25%";
 }
