@@ -270,7 +270,7 @@ let data = {
 var outputDisplay = document.getElementById("opertion_Values");
 var outputResult = document.getElementById("result_value")
 
-createButtons();
+createButtons(); // create method is called here
 
 
 function createButtons() {
