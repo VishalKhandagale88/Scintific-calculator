@@ -41,9 +41,7 @@
 #result_value{
     font-size: 5vh;
 }
-/* #inputContainer{
-    background-color: aliceblue;
-} */
+
 
 button{
     /* Do no removw this line */
@@ -54,4 +52,15 @@ button{
 
 #SelectTag{
     display: flex;
+}
+#displayButtons{
+    display: flex;
+}
+.buttons{
+    width: 4.6vw;
+    text-align: center;
+    border: none;
+    margin-left:1.5%;
+    
+    border-radius: 12%;
 }
